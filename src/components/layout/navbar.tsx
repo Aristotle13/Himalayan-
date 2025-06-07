@@ -10,11 +10,14 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/s
 import { Menu as MenuIcon, X as CloseIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
+import logo from './logo.png';
+
+
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/#about', label: 'About' },
-  { href: '/#contact', label: 'Contact' },
   { href: '/#gallery', label: 'Gallery' },
+  { href: '/#contact', label: 'Contact' },
   { href: '/menu', label: 'Menu' },
 ];
 
@@ -31,7 +34,7 @@ export default function Navbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2" onClick={handleLinkClick}>
           <Image
-            src="https://placehold.co/40x40.png"
+            src= {logo}
             alt="Himalayan Delights Logo"
             width={32}
             height={32}
@@ -39,7 +42,7 @@ export default function Navbar() {
             style={{ objectFit: 'contain' }}
             data-ai-hint="bakery logo"
           />
-          <span className="font-headline text-xl font-bold text-foreground">Himalayan Delights</span>
+          <span className="font-headline text-xl font-bold text-foreground">The Himalayan Sweets & Bakes</span>
         </Link>
 
         <nav className="hidden md:flex gap-6">

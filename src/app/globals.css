@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem; /* Navbar height is h-16 (4rem), adding 0.5rem buffer */
 }
 
 @layer base {

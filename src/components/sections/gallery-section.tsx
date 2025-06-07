@@ -1,14 +1,21 @@
 
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
+import momoImage from './images/momo.jpg';
+import naanImage from './images/naan.jpg';
+import thukpaImage from './images/thukpa.jpg';
+import gulabImage from './images/gulab jamun.jpg';
+import dhalbhatImage from './images/dhalbhat.jpg';
+import ladduImage from './images/laddu.png';
+
 
 const galleryItems = [
-  { src: "/images/momo.jpg", alt: "Delicious momos", dataAiHint: "himalayan food" },
-  { src: "https://placehold.co/400x300.png", alt: "Colorful sweets platter", dataAiHint: "indian sweets" },
-  { src: "https://placehold.co/400x300.png", alt: "Warm and cozy restaurant interior", dataAiHint: "restaurant interior" },
-  { src: "https://placehold.co/400x300.png", alt: "Freshly baked bread", dataAiHint: "artisan bread" },
-  { src: "https://placehold.co/400x300.png", alt: "Happy customers enjoying their meal", dataAiHint: "happy customers" },
-  { src: "https://placehold.co/400x300.png", alt: "Traditional Himalayan thali", dataAiHint: "himalayan thali" },
+  { src: momoImage, alt: "Delicious momos", dataAiHint: "himalayan food" },
+  { src: naanImage, alt: "Colorful sweets platter", dataAiHint: "indian sweets" },
+  { src: thukpaImage, alt: "Warm and cozy restaurant interior", dataAiHint: "restaurant interior" },
+  { src: gulabImage, alt: "Freshly baked bread", dataAiHint: "artisan bread" },
+  { src: dhalbhatImage, alt: "Happy customers enjoying their meal", dataAiHint: "happy customers" },
+  { src: ladduImage, alt: "Traditional Himalayan thali", dataAiHint: "himalayan thali" },
 ];
 
 export default function GallerySection() {
