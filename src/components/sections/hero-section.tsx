@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import logo from './images/logo.png'
 
 export default function HeroSection() {
   return (
@@ -25,7 +26,7 @@ export default function HeroSection() {
         </div>
         <div className="relative h-64 md:h-96 lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
           <Image
-            src="https://placehold.co/800x600.png"
+            src={logo}
             alt="Delicious Himalayan sweets and bakes"
             fill
             style={{ objectFit: 'cover' }}
