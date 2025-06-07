@@ -1,11 +1,13 @@
+
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
-import { Menu as MenuIcon, MountainSnow, X as CloseIcon } from 'lucide-react';
+import { Menu as MenuIcon, X as CloseIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
@@ -28,7 +30,14 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2" onClick={handleLinkClick}>
-          <MountainSnow className="h-8 w-8 text-primary" />
+          <Image 
+            src="https://placehold.co/40x40.png" 
+            alt="Himalayan Delights Logo" 
+            width={32} 
+            height={32} 
+            className="h-8 w-8"
+            data-ai-hint="bakery logo" 
+          />
           <span className="font-headline text-xl font-bold text-foreground">Himalayan Delights</span>
         </Link>
 
@@ -59,7 +68,14 @@ export default function Navbar() {
               <div className="flex flex-col gap-6">
                 <div className="flex justify-between items-center mb-4">
                     <Link href="/" className="flex items-center gap-2" onClick={handleLinkClick}>
-                        <MountainSnow className="h-7 w-7 text-primary" />
+                        <Image 
+                            src="https://placehold.co/40x40.png" 
+                            alt="Himalayan Delights Logo" 
+                            width={28} 
+                            height={28} 
+                            className="h-7 w-7"
+                            data-ai-hint="bakery logo"
+                        />
                         <span className="font-headline text-lg font-bold text-foreground">Himalayan Delights</span>
                     </Link>
                     <SheetClose asChild>
