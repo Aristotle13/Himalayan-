@@ -21,14 +21,15 @@ export default function ContactSection() {
                 <MapPin className="h-6 w-6 text-accent mt-1" />
                 <div>
                   <h3 className="font-semibold">Address</h3>
-                  <p>123 Himalaya Street, Mountain View, CA 94043</p>
+                  <p>0224683497
+                  Address: 35 Devon Street East, New Plymouth</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <Phone className="h-6 w-6 text-accent mt-1" />
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p>(123) 456-7890</p>
+                  <p>+64 456-7890</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">

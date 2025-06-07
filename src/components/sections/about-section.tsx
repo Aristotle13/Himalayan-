@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -15,8 +16,9 @@ export default function AboutSection() {
             <Image
               src="https://placehold.co/600x450.png"
               alt="Himalayan restaurant interior or founders"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, 50vw"
               data-ai-hint="himalayan culture kitchen"
             />
           </div>

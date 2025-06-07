@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import type { MenuItem } from '@/types';
@@ -14,8 +15,9 @@ export default function MenuItemCard({ item }: MenuItemCardProps) {
           <Image
             src={item.imageSrc}
             alt={item.name}
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: 'cover' }}
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             data-ai-hint={item.dataAiHint || "food item"}
           />
         </div>

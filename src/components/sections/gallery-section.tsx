@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -27,9 +28,10 @@ export default function GallerySection() {
                   <Image
                     src={item.src}
                     alt={item.alt}
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: 'cover' }}
                     className="transition-opacity duration-300 hover:opacity-90"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     data-ai-hint={item.dataAiHint}
                   />
                 </div>

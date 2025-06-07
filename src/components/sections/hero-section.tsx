@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -26,9 +27,10 @@ export default function HeroSection() {
           <Image
             src="https://placehold.co/800x600.png"
             alt="Delicious Himalayan sweets and bakes"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: 'cover' }}
             className="transform transition-transform duration-500 hover:scale-105"
+            sizes="(max-width: 768px) 100vw, 50vw"
             data-ai-hint="himalayan food variety"
           />
         </div>
