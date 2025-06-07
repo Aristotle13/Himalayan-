@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
 const galleryItems = [
-  { src: "https://placehold.co/400x300.png", alt: "Delicious momos", dataAiHint: "himalayan food" },
+  { src: "/images/momo.jpg", alt: "Delicious momos", dataAiHint: "himalayan food" },
   { src: "https://placehold.co/400x300.png", alt: "Colorful sweets platter", dataAiHint: "indian sweets" },
   { src: "https://placehold.co/400x300.png", alt: "Warm and cozy restaurant interior", dataAiHint: "restaurant interior" },
   { src: "https://placehold.co/400x300.png", alt: "Freshly baked bread", dataAiHint: "artisan bread" },
